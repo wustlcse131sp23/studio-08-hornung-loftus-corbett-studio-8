@@ -17,6 +17,24 @@ public class Date {
 	private int day;
 	private int year;
 	
+	public int getMonth() {
+		return month;
+	}
+	public void setMonth(int month) {
+		this.month = month;
+	}
+	public int getDay() {
+		return day;
+	}
+	public void setDay(int day) {
+		this.day = day;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
 	public Date (int chosenMonth, int chosenDay, int chosenYear) {
 		this.month = chosenMonth;
 		this.day = chosenDay;
@@ -46,6 +64,8 @@ public class Date {
     	set.add(d4);
     	set.add(d5);
     	System.out.println(set);
+    	
+    	//Sets don't include duplicates, while lists do include duplicates
     }
     
 	@Override

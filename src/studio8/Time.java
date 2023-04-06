@@ -28,6 +28,18 @@ public class Time {
 		System.out.println(t1.equals(t3));
 		System.out.println(t2.equals(t3));
     }
+	public String getHours() {
+		return hours;
+	}
+	public void setHours(String hours) {
+		this.hours = hours;
+	}
+	public String getMinutes() {
+		return minutes;
+	}
+	public void setMinutes(String minutes) {
+		this.minutes = minutes;
+	}
 	@Override
 	public int hashCode() {
 		return Objects.hash(hours, minutes);
